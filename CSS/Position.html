@@ -1,0 +1,78 @@
+<!--3. Add positions to CSS block (static, relative, fixed, absolute and sticky).-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.static {
+  position: static;
+  border: 3px solid #73AD21;
+}
+div.relative {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid #73AD21;
+} 
+
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}
+div.fixed {
+  position: fixed;
+  bottom: 1;
+  right: 0;
+  width: 400px;
+  border: 3px solid #73AD21;
+}
+div.sticky {
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #4CAF50;
+}
+</style>
+</head>
+<body>
+
+<h2> position: sticky; </h2>
+<div class="sticky">An element with position: sticky; is positioned based on the user's scroll position.</div>
+<br>
+<br>
+<br>
+
+<h2>position: static;</h2>
+<div class="static">
+  An element with position: static; is not positioned in any special way; it is 
+always positioned according to the normal flow of the page:
+</div>
+<br>
+<br>
+<br>
+
+<h2>position: fixed;</h2>
+<div class="fixed">
+An element with position: fixed; is positioned relative to the viewport, 
+which means it always stays in the same place even if the page is scrolled.
+</div>
+<br>
+<br>
+<br>
+
+<h2>position: relative;</h2>
+
+<h2>position: absolute;</h2>
+<div class="relative">An element with position: relative; is positioned relative to its normal position.
+  <div class="absolute">An element with position: absolute; 
+  is positioned relative to the nearest positioned ancestor.</div>
+</div>
+
+
+</body>
+</html>

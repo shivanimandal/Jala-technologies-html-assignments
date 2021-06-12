@@ -1,0 +1,39 @@
+<!--3. A long page which should have two links "click to go to bottom of page" and "click to
+go to top of page" . Also set their scroll-behavior to scroll smoothly.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html {
+  scroll-behavior: smooth;
+}
+
+#bottom {
+  height: 600px;
+  background-color: pink;
+}
+
+#top {
+  height: 600px;
+  background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<h1>Smooth Scrolling</h1>
+
+<div class="main" id="bottom">
+  <h2>Section 1</h2>
+  <p>Click on the link to see the "smooth" scrolling effect.</p>
+  <a href="#top">click me to go to bottom of page</a>
+</div>
+
+<div class="main" id="top">
+  <h2>Section 2</h2>
+  <a href="#bottom">click me to go to top of page</a>
+</div>
+
+</body>
+</html>

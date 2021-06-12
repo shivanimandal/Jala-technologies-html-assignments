@@ -1,0 +1,112 @@
+<!--2. Apply different visibility by an element (visibility: hidden, visible, collapse) and use
+different types of display for an element (display: none, inline, block, contents, list-item)-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.visible {
+  visibility: visible;
+}
+
+.not-visible {
+  visibility: hidden;
+}
+
+.collapse {
+  visibility: collapse;
+}
+
+table {
+  border: 1px solid red;
+}
+
+td {
+  border: 1px solid gray;
+}
+
+p {
+  color: red;
+}
+
+p.one {
+   display: none;
+}
+p.two {
+   display: inline;
+}
+p.three {
+   display: block;
+}
+p.four {
+   display: list-item;
+}
+.displayQuotes::after {
+   content:close-quote;
+}
+.displayQuotes::before {
+   content:open-quote;
+}
+
+</style>
+</head>
+<body>
+
+<h1> Visibility </h1>
+
+<p class="visible">The first paragraph is visible.</p>
+<p class="not-visible">The second paragraph is NOT visible.</p>
+<p class="visible">The third paragraph is visible. Notice the second paragraph is still occupying space.</p>
+
+<table>
+  <tr>
+    <td>1.1</td>
+    <td class="collapse">1.2</td>
+    <td>1.3</td>
+  </tr>
+  <tr class="collapse">
+    <td>2.1</td>
+    <td>2.2</td>
+    <td>2.3</td>
+  </tr>
+  <tr>
+    <td>3.1</td>
+    <td>3.2</td>
+    <td>3.3</td>
+  </tr>
+</table>
+
+<h1>The display Property</h1>
+
+<h2>display: none:</h2>
+<div>
+The peacock is our national bird. <p class="one">PEACOCK MOST BEAUTIFUL!</p>
+The male’s colourful and very large tail feathers have won the animal admiration the world over.
+</div>
+
+<h2>display: inline:</h2>
+<div>
+The peacock is our national bird. <p class="two">PEACOCK MOST BEAUTIFUL!</p>
+The male’s colourful and very large tail feathers have won the animal admiration the world over.
+</div>
+
+<h2>display: block:</h2>
+<div>
+The peacock is our national bird. <p class="three"><span> PEACOCK MOST BEAUTIFUL!</span></p>
+The male’s colourful and very large tail feathers have won the animal admiration the world over.
+</div>
+
+<h2>display: list-item:</h2>
+<div>
+The peacock is our national bird. <p class="four"><span> PEACOCK MOST BEAUTIFUL!</span></p>
+The male’s colourful and very large tail feathers have won the animal admiration the world over.
+</div>
+
+<h2>display: content:</h2>
+<div>
+The peacock is our national bird. <p class="four"><span class="displayQuotes"> PEACOCK MOST BEAUTIFUL!</span></p>
+The male’s colourful and very large tail feathers have won the animal admiration the world over.
+</div>
+
+
+</body>
+</html>
