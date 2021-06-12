@@ -1,0 +1,93 @@
+<html>
+<head> 
+<title> Basic HTML Webpage </title>
+<style>
+
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+p::first-letter {
+  color: #abc000;
+  font-size: xx-large;
+}
+
+</style>
+</head>
+<body>
+<div style = "border:5px solid pink;padding:20px;font-size:20px">
+<h1 align = "center"> MARK ZUKERBERG</h1>
+<img src = "zukerberg.jpg" width = "20%" height = "30%" alt = "Zukeberg image">
+<br>
+<a href="#sectionA">Who is Mark Zuckerberg?(Jump to Section A)</a><br><br>
+<a href="#sectionB">Early Life (Jump to Section B)</a><br><br>
+<a href="#sectionC">Personal Life (Jump to Section C)</a><br><br>
+
+<br>
+<br>
+
+<blockquote cite = "https://www.biography.com/business-figure/mark-zuckerberg">
+<i> <h2 id = "sectionA"> Who is Mark Zuckerberg? </h2> </i>
+<p> Mark Zuckerberg co-founded <b> the social-networking website Facebook </b> out of his college dorm room at Harvard University. 
+Zuckerberg left college after his sophomore year to concentrate on the site, the user base of which has grown to more than two billion people, 
+making Zuckerberg a billionaire many times over. 
+<span style="color:red;font-weight:bold">The birth of Facebook was portrayed in the 2010 film The Social Network.</span></p>
+
+<hr>
+
+<i> <h2 id = "sectionB"> Early Life </h2> </i>
+<p> Zuckerberg was born on <b> May 14, 1984 </b>, in White Plains, New York, into a comfortable, well-educated family. 
+He was raised in the nearby village of Dobbs Ferry. His parents are Karen (née Kempner), a psychiatrist, and Edward Zuckerberg, a dentist.
+Zuckerberg developed an interest in computers at an early age; when he was about 12, he used Atari BASIC to create a messaging program he named "Zucknet." 
+His father used the program in his dental office, so that the receptionist could inform him of a new patient without yelling across the room. 
+The family also used Zucknet to communicate within the house.</p>
+
+<hr>
+
+<i> <h2 id = "sectionC"> Personal Life </h2> </i>
+<p> Zuckerberg has been married to <span style="color:purple;font-weight:bold"> Priscilla Chan</span>, a Chinese-American medical student he met at Harvard, since 2012. 
+The longtime couple tied the knot one day after Facebook’s IPO. 
+Zuckerberg has two daughters, Max, born on November 30, 2015, and August, born on August 28, 2017.</p>
+
+</blockquote>
+
+<b><a href = "know.html" target="_blank"> Know more about Mark Zuckerberg </a></b>
+
+<h3> HIS HOBBIES</h3>
+<ul>
+<li> Reading Books</li>
+<li> Listening to Music </li>
+<li>Playing Games </li>
+<li> Browsing</lli>
+</ul>
+
+<form>
+<h4> Give Your Feedback Found it interested </h4>
+<label for="excellent">Excellent</label>
+<input type="radio" name="feedback" id="excellent" value="excellent"><br>
+<label for="good">Good</label>
+<input type="radio" name="feedback" id="good" value="good"><br>
+<label for="average">Average</label>
+<input type="radio" name="feedback" id="average" value="average"><br><br>
+<input type="submit" value="Submit">
+</form>
+
+</div>
+</body>
+</html>

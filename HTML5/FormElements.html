@@ -1,0 +1,130 @@
+<html>
+<head> 
+<title>
+Form Controls
+</title>
+</head>
+<body bgcolor="lightskyblue">
+<center> <h1 style="color:red"> Application Form For Interview </h1> </center>
+<b><h2 style="color:yellow"><marquee>Welcome Have a nice day!!</marquee></h2></b>
+<center><iframe src="iframe.html" width="30%" height="10%" style="border:5px solid black;">
+</iframe>
+<form>
+<table>
+	<tr>
+		<td>
+		<input type="text" value="Post for Software Engineer" readonly>
+		</td>
+	</tr>
+
+	<tr>
+		<td><b>First Name:</b></td><td><input type="text" size="50" required></td>
+	</tr>
+	<tr>
+		<td><b>Last Name:</b></td><td><input type="text" size="50" required></td>
+	</tr>
+
+	<tr>
+		<td><b>Gender:</b></td>
+		<td>
+			<input type="radio" value="f" name="gender">Female,
+			<input type="radio" value="m" name="gender">Male,
+			<input type="radio" value="o" name="gender">Others
+		</td>
+	</tr>
+
+	<tr>
+		<td><b>DOB:</b></td><td><input type="date" max="1979-12-31" min="2000-01-02" required></td>
+	</tr>
+
+	<tr>
+		<td><b>Email Id:</b></td><td><input type="email" required></td>
+	</tr>
+
+	<tr>
+		<td><b>Password:</b></td><td><input type="password" required></td>
+	</tr>
+
+	<tr>
+		<td><b>Confirm Password:</b></td><td><input type="password" required></td>
+	</tr>
+
+	<tr>
+		<td><b>Phone Number:</b></td><td><input type="number"></td>
+	</tr>
+
+	<tr>
+		<td><b>Country:</b></td>
+		<td><input type="text" value="India" disabled></td>
+	</tr>
+
+	<tr>
+		<td><b>State:</b></td>
+		<td>
+			<select>
+				<option> Select </option>	
+				<option> Telangana </option>
+				<option> Mumbai </option>
+				<option> Bangalore </option>
+				<option> Chennai </option>
+			
+			</select>
+		</td>
+	</tr>
+
+	<tr>
+		<td> <b> Pin:</b></td>
+  		<td><input type="text" maxlength="6" size="6"></td>
+	</tr>
+
+	<tr>
+		<td><b>Address:</b></td><td><textarea rows="5" cols="80"></textarea></td>
+	</tr>
+
+	<tr>
+		<td><b>Technical Skills:</b></td>
+		<td>
+			<input type="checkbox">C Language<br>
+			<input type="checkbox">Java<br>
+			<input type="checkbox">Python<br>
+			<input type="checkbox">C++<br>
+		</td>
+	</tr>
+	
+	<tr>
+		<td><b> <p> How Confident You are in <br>
+			 above technical skills:<br>
+			 (Between 0 to 50)</p> </b> </td> 
+		<td> <input type="range" min="0" max="50"></td>
+  		
+	</tr>
+	
+	<tr>
+		<td> <p> <b> Select a time: <br>
+			(when you are available)</b></p></td>
+  		<td> <input type="time"></td>
+	</tr>
+
+	<tr>
+		<td><b>Upload Your Image:</b></td>
+		<td><input type="file"></td>
+	</tr>
+
+	<tr>
+		<td><b>Select your favorite color:</b></td>
+  		<td><input type="color" value="#ff0000"></td>
+	</tr>
+
+	<tr>
+		<td> <p><b>Want to know about company: <a href="https://www.company.com" target="_blank">Visit!</a></b></p></td>
+	</tr>
+
+	<tr>
+		<td><b><input type="Submit" value="submit"></b></td>
+		<td><b><input type="Reset"></b></td>
+	</tr>
+</table>
+</form>
+</center>
+</body>	
+</html>
