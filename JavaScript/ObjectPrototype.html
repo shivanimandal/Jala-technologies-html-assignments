@@ -1,0 +1,25 @@
+<!--5. Add some more properties to an existing function using object prototypes.-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Object Prototypes</h2>
+
+<p id="demo"></p>
+
+<script>
+function Employee(first, last, deptid) {
+  this.firstName = first;
+  this.lastName = last;
+  this.deptid = deptid;
+}
+
+Employee.prototype.salary = 20000;
+
+var myDetails = new Employee("Pava", "Kumar", 101);
+document.getElementById("demo").innerHTML = "My Salary is " + myDetails.salary; 
+</script>
+
+</body>
+</html>

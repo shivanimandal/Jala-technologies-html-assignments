@@ -1,0 +1,17 @@
+<!--5. Create a JSON object and access it using dot notation.-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Access a JavaScript Object</h2>
+<p id="demo"></p>
+
+<script>
+const myDetails = '{"name":"Shivani", "age":30, "car":null}';
+const myObj = JSON.parse(myDetails);
+document.getElementById("demo").innerHTML = myObj.name;
+</script>
+
+</body>
+</html>

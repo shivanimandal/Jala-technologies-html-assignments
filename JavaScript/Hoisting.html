@@ -1,0 +1,19 @@
+<!--5. Write a program with variable hoisting(initialization first then declaration).-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo">Value is: </p>
+
+<script>
+x = 10; // Assign 10 to x
+
+element = document.getElementById("demo"); // Find an element 
+element.innerHTML = "Value is: " + x;           // Display x in the element
+
+var x; // Declare x 
+</script>
+
+</body>
+</html> 

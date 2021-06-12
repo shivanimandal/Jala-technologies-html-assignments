@@ -1,0 +1,25 @@
+<!--1. Add an event listener to a button. When we click on it should display current date
+and time.-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>This example uses the addEventListener() method to attach a click event to a button.</p>
+
+<button id="btn">Click it</button>
+
+<h2> Current Date </h2>
+
+<p id="demo"></p>
+
+<script>
+var today = new Date();
+var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+document.getElementById("btn").addEventListener("click", function() {
+  document.getElementById("demo").innerHTML = date;
+});
+</script>
+
+</body>
+</html>

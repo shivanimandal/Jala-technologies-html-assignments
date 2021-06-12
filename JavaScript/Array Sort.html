@@ -1,0 +1,34 @@
+<!-- 2. Create an array consisting of fruits names and when we click on a button sort it in
+descending order.-->
+
+<html>
+<body>
+
+<h2>Array Sorting In Descending order </h2>
+
+<p> To sort the array in descending order click on the below button </p>
+
+<button onclick="myFunction()">Sort</button>
+
+<p id="demo"></p>
+
+<script>
+// Create and display an array:
+var fruits = ["Apple", "Mango", "Strawberry", "Pineapple"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction() {
+
+/*By combining sort() and reverse() 
+ you can sort an array in descending order*/
+
+  // First sort the array
+  fruits.sort();
+  // Then reverse it:
+  fruits.reverse();
+  document.getElementById("demo").innerHTML = fruits;
+}
+</script>
+
+</body>
+</html>
